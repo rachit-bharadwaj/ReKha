@@ -80,7 +80,7 @@ const Login = () => {
       if (data.status === 400 || data.status === 500) toast.error(data.message);
       else if (data.status === 200) {
         toast.success(data.message);
-        router.push("/dashboard");
+        router.push("/");
       }
     } catch (error) {
       toast.error("Something went wrong");
