@@ -1,3 +1,9 @@
+import { Card } from "@/components/home";
+
 export default function Home() {
-  return <main></main>;
+  return (
+    <main>
+      <Card />
+    </main>
+  );
 }

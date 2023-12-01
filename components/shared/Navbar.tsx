@@ -42,17 +42,29 @@ const Navbar = () => {
               </DropdownMenuTrigger>
 
               <DropdownMenuContent>
-                <DropdownMenuItem className="gap-2 text-gray-600">
-                  <TiUser className="text-lg" />
-                  Personal Expense
+                <DropdownMenuItem>
+                  <Link
+                    href="/expense/new"
+                    className="flex gap-2 text-gray-600"
+                  >
+                    <TiUser className="text-lg" />
+                    Personal Expense
+                  </Link>
                 </DropdownMenuItem>
                 <DropdownMenuSeparator />
-                <DropdownMenuItem className="gap-2 text-gray-600">
-                  <HiMiniUserGroup className="text-lg" /> Group Expense
+                <DropdownMenuItem>
+                  <Link
+                    href="/expense/group"
+                    className="flex gap-2 text-gray-600"
+                  >
+                    <HiMiniUserGroup className="text-lg" /> Group Expense
+                  </Link>
                 </DropdownMenuItem>
-                <DropdownMenuItem className="gap-2 text-gray-600">
-                  <AiOutlineUsergroupAdd className="text-lg" />
-                  New Group
+                <DropdownMenuItem>
+                  <Link href="/groups/new" className="flex gap-2 text-gray-600">
+                    <AiOutlineUsergroupAdd className="text-lg" />
+                    New Group
+                  </Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
