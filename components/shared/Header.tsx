@@ -1,23 +1,26 @@
 "use client";
 
+import { useEffect, useState } from "react";
+
 // icons
 import { CgMenuGridO } from "react-icons/cg";
 import { IoNotifications } from "react-icons/io5";
 
 const Header = () => {
-  const pathname = window.location.pathname;
-  const nextSlashIndex = pathname.indexOf("/", 1); // Find the index of the next slash after the first character
-  const pageTitle =
-    nextSlashIndex !== -1
-      ? pathname.substring(1, nextSlashIndex)
-      : pathname.substring(1); // Get the substring before the next slash or the whole string if there is no next slash
+  const [pageTitle, setPageTitle] = useState("ReKha");
+
+  useEffect(() => {
+    const title = document.title;
+    const firstWord = title.split(" ")[0];
+    setPageTitle(firstWord);
+  }, []);
 
   return (
-    <header className="flex justify-between p-3">
+    <header className="flex justify-between p-3 sticky top-0 z-50 bg-blur bg-opacity-50">
       <CgMenuGridO className="text-2xl" />
 
       {/* name of the page opened */}
-      <h1 className="capitalize text-lg font-bold">{pageTitle || `Home`}</h1>
+      <h1 className="capitalize text-xl font-bold">{pageTitle}</h1>
 
       <IoNotifications className="text-2xl" />
     </header>

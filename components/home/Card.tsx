@@ -12,7 +12,7 @@ const Card = () => {
         <div className="flex justify-between w-full">
           <div>
             <p>Total Balance</p>
-            <p className="text-lg font-bold">&#8377;750</p>
+            <p className="text-lg font-bold">&#8377;0</p>
           </div>
 
           <HiDotsHorizontal />
@@ -24,7 +24,7 @@ const Card = () => {
               <TbSquareRoundedArrowDownFilled /> <p>Income</p>
             </div>
 
-            <p>&#8377;4512</p>
+            <p>&#8377;0</p>
           </div>
 
           <div>
@@ -32,7 +32,7 @@ const Card = () => {
               <TbSquareRoundedArrowUpFilled /> <p>Expenses</p>
             </div>
 
-            <p>&#8377;4512</p>
+            <p>&#8377;0</p>
           </div>
         </div>
 

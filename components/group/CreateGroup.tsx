@@ -87,7 +87,7 @@ const CreateGroup = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex flex-col gap-3 max-w-xs mx-auto"
+      className="flex flex-col gap-3 max-w-xs mx-auto mb-20"
     >
       <input
         type="text"

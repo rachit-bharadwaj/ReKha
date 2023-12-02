@@ -51,7 +51,7 @@ module.exports = {
       // media queries
       screens: {
         xs: "20rem", // 320px
-        
+
         sm: "40rem", // 640px
 
         md: "48rem", // 768px
@@ -62,7 +62,6 @@ module.exports = {
 
         "2xl": "96rem", // 1536px
       },
-
 
       borderRadius: {
         lg: "var(--radius)",
@@ -85,5 +84,8 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    require("tailwindcss-animate"),
+    require("tailwind-scrollbar")({ nocompatible: true }),
+  ],
 };

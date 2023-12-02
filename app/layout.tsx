@@ -19,7 +19,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html
       lang="en"
-      className={`${nunito_sans.variable} selection:bg-primary/75 selection:text-white-dark`}
+      className={`${nunito_sans.variable} 
+      scrollbar scrollbar-thumb-gray-500 scrollbar-track-gray-300 scrollbar-track-rounded-full scrollbar-thumb-rounded-full scrollbar-w-3 focus:scrollbar-thumb-red-500
+      selection:bg-primary/75 selection:text-white-dark`}
     >
       <body>{children}</body>
     </html>

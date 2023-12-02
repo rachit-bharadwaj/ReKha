@@ -2,6 +2,7 @@
 
 import User from "@/models/User";
 import connectDB from "@/utils/mongoose";
+import { getCookieData } from "./auth.action";
 
 export const searchUser = async ({ query }: any) => {
   connectDB();
@@ -14,4 +15,12 @@ export const searchUser = async ({ query }: any) => {
   });
 
   return users;
+};
+
+export const getUserDataFromCookie = async () => {
+  connectDB();
+  const userID = await getCookieData();
+  const userData = await User.findById(userID);
+
+  return userData;
 };
