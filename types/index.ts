@@ -1,3 +1,5 @@
+import { ElementType } from "react";
+
 export type User = {
   _id: string;
   id: string;
@@ -11,4 +13,11 @@ export type Transaction = {
   amount: number;
   DateTime: Date;
   type: string;
+};
+
+export type AccountProps = {
+  link: string;
+  Icon: ElementType;
+  bgColor: string;
+  title: string;
 };

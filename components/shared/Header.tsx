@@ -17,12 +17,12 @@ const Header = () => {
 
   return (
     <header className="flex justify-between p-3 sticky top-0 z-50 bg-blur bg-opacity-50">
-      <CgMenuGridO className="text-2xl" />
+      <CgMenuGridO className="text-2xl text-gray-500" />
 
       {/* name of the page opened */}
       <h1 className="capitalize text-xl font-bold">{pageTitle}</h1>
 
-      <IoNotifications className="text-2xl" />
+      <IoNotifications className="text-2xl text-gray-500" />
     </header>
   );
 };
