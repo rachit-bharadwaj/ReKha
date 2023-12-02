@@ -77,7 +77,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link href="/">
+          <Link href="/account">
             <RiUserSmileFill />
           </Link>
         </li>
